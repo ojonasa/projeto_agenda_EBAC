@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+
+   color: #1a1a1a;
+}
+body {
+   background-color: rgb(223, 223, 223);
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   max-width: 70vw;
+   margin: 0 auto;
+   margin-top: 20px;
+   padding: 15px;
+   background-color: #ebebeb;
+   border: 1px solid rgba(20, 20, 20, 0.25);
+   border-radius: 8px;
+   box-shadow: 6px 6px 1px 5px rgba(26, 26, 26, 0.20) ;
+}
+
+.caixa-inputs {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin: 0 14px;
+   margin-bottom: 14px;
+   padding-bottom: 12px;
+   border-bottom: 2px solid rgba(20, 20, 20, 0.2);
+}
+
+h2 {
+   font-size: 32px;
+   color: #555555;
+}
+
+h3 {
+   font-size: 20px;
+   color: #555555;
+   margin-bottom: 8px;
+}
+
+form {
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   gap: 30px;
+}
+
+input {
+   height: 32px;
+   padding-left: 4px;
+   font-size: 14px;
+   font-weight: 600;
+   color: #4d4d4d;
+   border: 2px solid rgb(94, 94, 94);
+   border-radius: 8px;
+   transition: all .2s ease-in-out;
+}
+
+input#nome {
+   width: 190px;
+
+}
+
+input#nome.incorreto {
+   border: 2px solid rgb(173, 74, 74);
+
+}
+
+
+input#tel {
+   width: 140px;
+}
+
+input:focus {
+   transform: scale(1.05);
+   border: 2px solid rgb(74, 120, 173);
+   outline: none;
+}
+
+button {
+   width: 120px;
+   height: 32px;
+   font-size: 14px;
+   font-weight: 600;
+   border: none;
+   border-radius: 8px;
+   padding-top: 1px;
+}
+
+button#btn-adc {
+   background-color: rgb(74, 173, 74);
+   color: rgb(238, 238, 238);
+   transition: all .2s ease-in-out;
+}
+
+button#btn-adc:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+
+
+.tabela-contatos {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   margin: 0 18px;
+   margin-bottom: 12px;
+}
+
+
+
+table {
+   width: 50%;
+   border: 4px solid #ddd;
+   text-align: center;
+   border-collapse: collapse;
+}
+
+
+th, td {
+   padding: 8px;
+   border: 1px solid #ddd;
+}
+
+th {
+   background-color: #f5f5f5;
+   font-weight: bold;
+}
+
+td i{
+   font-size: 26px;
+   margin-top: 5px;
+   color: #d84747;
+}
